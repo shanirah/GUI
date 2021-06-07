@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d55c207-054a-4f1c-83c5-c8f28740ebed" name="Default Changelist" comment="maze view works no passing through walls" />
+    <list default="true" id="2d55c207-054a-4f1c-83c5-c8f28740ebed" name="Default Changelist" comment="maze view works no passing through walls">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MazeDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MazeDisplayer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623057127639</updated>
-      <workItem from="1623057129288" duration="675000" />
+      <workItem from="1623057129288" duration="1596000" />
     </task>
     <task id="LOCAL‎00001" summary="maze view works no passing through walls">
       <created>1623057383348</created>
@@ -70,7 +73,13 @@
       <option name="presentableId" value="LOCAL‎00001" />
       <updated>1623057383348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎00002" summary="maze view works no passing through walls">
+      <created>1623057836053</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1623057836053</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

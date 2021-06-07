@@ -82,10 +82,11 @@ public class MazeDisplayer extends Canvas {
             double cellWidth = canvasWidth / cols;
 
             GraphicsContext graphicsContext = getGraphicsContext2D();
+            GraphicsContext floor = getGraphicsContext2D();
             //clear the canvas:
             graphicsContext.clearRect(0, 0, canvasWidth, canvasHeight);
 
-            drawMazeWalls(graphicsContext, cellHeight, cellWidth, rows, cols);
+            drawMazeWalls(graphicsContext,floor, cellHeight, cellWidth, rows, cols);
             if(solution != null)
                 drawSolution(graphicsContext, cellHeight, cellWidth);
             drawPlayer(graphicsContext, cellHeight, cellWidth);
@@ -97,8 +98,9 @@ public class MazeDisplayer extends Canvas {
         System.out.println("drawing solution...");
     }
 
-    private void drawMazeWalls(GraphicsContext graphicsContext, double cellHeight, double cellWidth, int rows, int cols) {
+    private void drawMazeWalls(GraphicsContext graphicsContext,GraphicsContext floor, double cellHeight, double cellWidth, int rows, int cols) {
         graphicsContext.setFill(Color.RED);
+        floor.setFill(Color.BLANCHEDALMOND);
 
         Image wallImage = null;
         try{
@@ -109,10 +111,13 @@ public class MazeDisplayer extends Canvas {
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
+                double x = j * cellWidth;
+                double y = i * cellHeight;
+                if (maze.getMatrix()[i][j] == 0){
+                    floor.fillRect(x, y, cellWidth, cellHeight);
+                }
                 if(maze.getMatrix()[i][j] == 1){
                     //if it is a wall:
-                    double x = j * cellWidth;
-                    double y = i * cellHeight;
                     if(wallImage == null)
                         graphicsContext.fillRect(x, y, cellWidth, cellHeight);
                     else
@@ -139,6 +144,3 @@ public class MazeDisplayer extends Canvas {
             graphicsContext.drawImage(playerImage, x, y, cellWidth, cellHeight);
     }
 }
-
-
-

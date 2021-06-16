@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="333.0" prefWidth="391.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PropertiesController">
+   <children>
+      <TextField fx:id="textField_threadsNumber" layoutX="151.0" layoutY="56.0" prefHeight="25.0" prefWidth="60.0" />
+      <Label layoutX="37.0" layoutY="60.0" text="Number of threads:" />
+      <Label layoutX="37.0" layoutY="113.0" prefHeight="17.0" prefWidth="166.0" text="Maze generating algorithm:" />
+      <Label layoutX="37.0" layoutY="165.0" text="Maze solving algorithm:" />
+      <Button layoutX="246.0" layoutY="279.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="118.0" text="back to game" onMouseClicked="#backToGame"/>
+      <Button layoutX="246.0" layoutY="245.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="118.0" text="About the algorithms" onMouseClicked="#aboutTheAlgo"/>
+      <Button layoutX="246.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#saveChanges" prefHeight="23.0" prefWidth="118.0" text="Save changes" />
+      <TextField fx:id="textField_generatingAlgo" layoutX="196.0" layoutY="109.0" prefHeight="25.0" prefWidth="139.0" />
+      <TextField fx:id="textField_solvingAlgo" layoutX="196.0" layoutY="161.0" prefHeight="25.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d55c207-054a-4f1c-83c5-c8f28740ebed" name="Default Changelist" comment="maze view works no passing through walls">
+    <list default="true" id="2d55c207-054a-4f1c-83c5-c8f28740ebed" name="Default Changelist" comment="backround changed">
+      <change afterPath="$PROJECT_DIR$/Resources/images/SAVE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/images/bone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/images/dogdown.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/images/keys.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/images/onePaw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/images/paw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/images/teddy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/sounds/victory.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Help.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/HelpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Properties.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/PropertiesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/teddy.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/IModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/IModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/MyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/MyModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MazeDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MazeDisplayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MyView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MyViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ViewModel/MyViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewModel/MyViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tc8gSj16TpaWPBV8s2wYNJxYw9" />
@@ -24,7 +58,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\EX5\GUI\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\EX5\GUI\src\View" />
+      <recent name="C:\EX5\GUI\Resources\sounds" />
+      <recent name="C:\EX5\GUI\Resources\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -40,13 +87,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,7 +114,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623057127639</updated>
-      <workItem from="1623057129288" duration="1596000" />
+      <workItem from="1623057129288" duration="24438000" />
+      <workItem from="1623093587049" duration="5668000" />
+      <workItem from="1623099976245" duration="5583000" />
+      <workItem from="1623106415819" duration="26793000" />
+      <workItem from="1623264131297" duration="30030000" />
+      <workItem from="1623857098437" duration="10719000" />
     </task>
     <task id="LOCAL‎00001" summary="maze view works no passing through walls">
       <created>1623057383348</created>
@@ -79,7 +133,13 @@
       <option name="presentableId" value="LOCAL‎00002" />
       <updated>1623057836053</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL‎00003" summary="maze view works no passing through walls">
+      <created>1623058752699</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1623058752699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +155,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maze view works no passing through walls" />

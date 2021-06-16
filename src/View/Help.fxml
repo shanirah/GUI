@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.HelpController" stylesheets="@MainStyle.css">
+   <children>
+      <Accordion prefHeight="391.0" prefWidth="595.0" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="119.0" prefWidth="600.0" text="The Brick">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextFlow prefHeight="303.3333333333333" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                                <TextArea editable="false" opacity="0.91" prefHeight="152.0" prefWidth="408.0" text="In a place where there is a brick Teddy can't pass, but don't worry there is always another way to the bone! &#10;" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                </TextArea>
+                           </children></TextFlow>
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                    <ImageView fx:id="brick" fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image backgroundLoading="true" url="@/images/brick.PNG" />
+                        </image>
+                    </ImageView>
+               </graphic>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="2318.0" prefWidth="1977.0" text="Teddy the dog">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <TextFlow prefHeight="303.3333333333333" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                          <TextArea editable="false" opacity="0.91" prefHeight="152.0" prefWidth="408.0" text="Teddy is the player of the game, he can move up, down, left or right and also in diagonals as long as there are no bricks in the way" wrapText="true">
+                              <font>
+                                  <Font name="System Bold Italic" size="14.0" />
+                              </font>
+                          </TextArea>
+                      </children></TextFlow>
+              </AnchorPane>
+            </content>
+              <graphic>
+                  <ImageView fx:id="dog" fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image backgroundLoading="true" url="@/images/dogdown.PNG" />
+                      </image>
+                  </ImageView>
+              </graphic>
+          </TitledPane>
+            <TitledPane animated="false" text="The solution">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <TextFlow prefHeight="303.3333333333333" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <TextArea editable="false" opacity="0.91" prefHeight="152.0" prefWidth="408.0" text="If you want to see the solution of the maze just press the 'solve maze' button and Teddy's trails will show you the way " wrapText="true">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                </TextArea>
+                            </children></TextFlow>
+                    </AnchorPane>              </content>
+                <graphic>
+                    <ImageView fx:id="paw" fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image backgroundLoading="true" url="@/images/paw.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </TitledPane>
+          <TitledPane animated="false" text="The Bone">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <TextFlow prefHeight="303.3333333333333" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                          <TextArea editable="false" opacity="0.91" prefHeight="152.0" prefWidth="408.0" text="The bone is your goal! Teddy needs to get to the end of the maze and arrive to his yummy bone. He can't do it without you ;)" wrapText="true">
+                              <font>
+                                  <Font name="System Bold Italic" size="14.0" />
+                              </font>
+                          </TextArea>
+                      </children></TextFlow>
+              </AnchorPane>
+            </content>
+              <graphic>
+                  <ImageView fx:id="bone" fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image backgroundLoading="true" url="@/images/bone.png" />
+                      </image>
+                  </ImageView>
+              </graphic>
+          </TitledPane>
+
+            <TitledPane animated="false" text="Moving in the maze">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <TextFlow prefHeight="303.3333333333333" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <TextArea editable="false" opacity="0.91" prefHeight="152.0" prefWidth="408.0" text="Moving in the maze is eazy - you can use the arrows in your keyboard or the numbers in the right side of the keyboard.You can also click teddy and drug him with your mouse. " wrapText="true">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                </TextArea>
+                            </children></TextFlow>
+                    </AnchorPane>              </content>
+                <graphic>
+                    <ImageView fx:id="arrows" fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image backgroundLoading="true" url="@/images/keys.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </TitledPane>
+            <TitledPane animated="false" prefHeight="2318.0" prefWidth="1977.0" text="Generating new maze">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <TextFlow prefHeight="303.3333333333333" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <TextArea editable="false" opacity="0.91" prefHeight="152.0" prefWidth="408.0" text="You can generate new maze with custom sizes just fill the 'maze Rows' and 'maze Columns' fields and press 'generate maze'. if you would like to start a standard size maze (50X50) press 'file' and choose 'new'" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                </TextArea>
+                            </children></TextFlow>
+                    </AnchorPane>
+                </content>
+                <graphic>
+                    <ImageView fx:id="maze" fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image backgroundLoading="true" url="@/images/maze.JPG" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </TitledPane>
+            <TitledPane animated="false" prefHeight="2318.0" prefWidth="1977.0" text="Save &amp; Load">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <TextFlow prefHeight="303.3333333333333" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <TextArea editable="false" opacity="0.91" prefHeight="152.0" prefWidth="408.0" text="You can save the current maze and load it later. All you need to do is to press 'file' and choose 'save', now your maze is saved. In order to load a maze press 'file' and than 'load' and choose the maze you would like to load" wrapText="true">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                </TextArea>
+                            </children></TextFlow>
+                    </AnchorPane>
+                </content>
+                <graphic>
+                    <ImageView fx:id="save" fitHeight="37.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image backgroundLoading="true" url="@/images/SAVE.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </TitledPane>
+
+        </panes>
+      </Accordion>
+       <Button layoutX="194.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#back" text="Back to play" />
+   </children>
+</AnchorPane>

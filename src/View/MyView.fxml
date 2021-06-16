@@ -3,6 +3,7 @@
 <?import View.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <BorderPane onMouseClicked="#mouseClicked" prefHeight="408.0" prefWidth="594.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
@@ -21,7 +22,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <Label text="Maze rows:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
                     <Label text="Maze columns:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
@@ -33,8 +34,7 @@
                     <Label text="Player Col = " GridPane.rowIndex="5" />
                     <Label fx:id="playerRow" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                     <Label fx:id="playerCol" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-               <CheckBox fx:id="music" mnemonicParsing="false" onMouseClicked="#backgroundMusic" text="Music" GridPane.rowIndex="6" />
-                </GridPane>
+                    <Button mnemonicParsing="false" onMouseClicked="#backgroundMusic" prefHeight="25.0" prefWidth="198.0" text="Play Music!" GridPane.rowIndex="6" />                </GridPane>
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -44,7 +44,7 @@
     <bottom>
         <HBox BorderPane.alignment="CENTER">
             <children>
-                <Label text="Status bar" />
+                <Label text="Good Luck!" />
             </children>
         </HBox>
     </bottom>
@@ -55,21 +55,63 @@
                     <menus>
                         <Menu mnemonicParsing="false" text="File">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="New" />
-                                <MenuItem mnemonicParsing="false" text="Save" />
-                                <MenuItem mnemonicParsing="false" onAction="#loadFile" text="Load" />
+                                <MenuItem mnemonicParsing="false" onAction="#newMaze" text="New">
+                                    <graphic>
+                                        <ImageView fx:id="paw" fitHeight="12.3" fitWidth="17.3" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image backgroundLoading="true" url="@/images/onePaw.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </MenuItem>
+                                <MenuItem mnemonicParsing="false" onAction="#saveMaze" text="Save">
+                                    <graphic>
+                                        <ImageView fx:id="onepaw" fitHeight="12.3" fitWidth="17.3" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image backgroundLoading="true" url="@/images/onePaw.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </MenuItem>
+                                <MenuItem mnemonicParsing="false" onAction="#loadFile" text="Load">
+                                    <graphic>
+                                        <ImageView fx:id="save" fitHeight="12.3" fitWidth="17.3" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image backgroundLoading="true" url="@/images/onePaw.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </MenuItem>
+
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Options">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="Properties" />
+                                <MenuItem mnemonicParsing="false" onAction="#properties" text="Properties">
+                                    <graphic>
+                                        <ImageView fx:id="1paw" fitHeight="12.3" fitWidth="17.3" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image backgroundLoading="true" url="@/images/onePaw.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </MenuItem>
                             </items>
                         </Menu>
-                        <Menu mnemonicParsing="false" text="Help">
+                        <Menu mnemonicParsing="false">
+                            <graphic>
+                                <Label fx:id="help" onMouseClicked="#help" text="Help" />
+                            </graphic>
                         </Menu>
-                        <Menu mnemonicParsing="false" onAction="#about" text="About">
+                        <Menu mnemonicParsing="false">
+                            <graphic>
+                                <Label fx:id="about" onMouseClicked="#about" text="About" />
+                            </graphic>
                         </Menu>
-                        <Menu mnemonicParsing="false" text="Exit">
+                        <Menu mnemonicParsing="false">
+                            <graphic>
+                                <Label fx:id="exit" onMouseClicked="#exit" text="Exit" />
+                            </graphic>
                         </Menu>
                     </menus>
                 </MenuBar>
@@ -79,7 +121,7 @@
     <center>
         <Pane BorderPane.alignment="CENTER">
             <children>
-                <MazeDisplayer fx:id="mazeDisplayer" height="750.0" imageFileNamePlayer="Resources/images/character.jpg" imageFileNameWall="Resources/images/brick.PNG" onKeyPressed="#keyPressed" width="750.0" />
+                <MazeDisplayer fx:id="mazeDisplayer" height="650.0" imageFileNameBone="Resources/images/bone.png" imageFileNamePaw="Resources/images/paw.png" imageFileNamePlayer="Resources/images/dogdown.PNG" imageFileNameWall="Resources/images/brick.PNG" onKeyPressed="#keyPressed" onMouseDragged="#drag" onScroll="#scroll" width="650.0" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
